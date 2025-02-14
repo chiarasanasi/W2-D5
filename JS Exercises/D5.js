@@ -132,27 +132,106 @@ while (numericArray[apice] !== 32) {
 */
 const charactersArray = ["g", "n", "u", "z", "d"]
 const numbersArray = []
+function togliere(n) {
+  for (let i = 0; i <= n; i++) {
+    charactersArray.shift()
+  }
+}
+
+togliere(5)
+charactersArray.push(
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "z"
+)
 
 for (let i = 0; i < charactersArray.length; i++) {
   let valore = charactersArray[i]
   switch (valore) {
+    case "a":
+      numbersArray.push(1)
+      break
+    case "b":
+      numbersArray.push(2)
+      break
+    case "c":
+      numbersArray.push(3)
+      break
+    case "d":
+      numbersArray.push(4)
+      break
+    case "e":
+      numbersArray.push(5)
+      break
+    case "f":
+      numbersArray.push(6)
+      break
     case "g":
       numbersArray.push(7)
+      break
+    case "h":
+      numbersArray.push(8)
+      break
+    case "i":
+      numbersArray.push(9)
+      break
+    case "l":
+      numbersArray.push(10)
+      break
+    case "m":
+      numbersArray.push(11)
       break
     case "n":
       numbersArray.push(12)
       break
+    case "o":
+      numbersArray.push(13)
+      break
+    case "p":
+      numbersArray.push(14)
+      break
+    case "q":
+      numbersArray.push(15)
+      break
+    case "r":
+      numbersArray.push(16)
+      break
+    case "s":
+      numbersArray.push(17)
+      break
+    case "t":
+      numbersArray.push(18)
+      break
     case "u":
       numbersArray.push(19)
       break
+    case "v":
+      numbersArray.push(20)
+      break
     case "z":
       numbersArray.push(21)
-      break
-    case "d":
-      numbersArray.push(4)
       break
     default:
       console.log("non riconosco questo valore")
   }
 }
+
 console.log(numbersArray)
